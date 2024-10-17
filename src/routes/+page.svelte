@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Tabs from '../components/TabsInfo.svelte';
 	import BreadcrumbHome from '../components/BreadcrumbHome.svelte';
 	import Header from '../components/Header.svelte';
 	import { Plus, User, Package, Github } from 'lucide-svelte';
@@ -27,10 +28,13 @@
 					</p>
 					<p class="text-stone-700/70 flex gap-2 items-center font-semibold">
 						<Github size={16} class="fill-stone-700/70" /> 65511208
+						<a class="underline text-stone-400" href="/"> Vincular outra conta </a>
 					</p>
 				</div>
 				<div class="text-muted-foreground">
-					<p class="font-semibold text-white flex gap-2 items-center pointer-events-none select-none	">
+					<p
+						class="font-semibold text-white flex gap-2 items-center pointer-events-none select-none"
+					>
 						<Package size={16} />
 						Recursos
 					</p>
@@ -38,6 +42,12 @@
 					<p>0.25 vCPUs</p>
 				</div>
 			</div>
+			<div class="relative">
+				<Tabs />
+			</div>
 		</section>
+		<footer class="mt-12">
+			<img src="/logo.svg" alt="discloud_logo" width="170" class="grayscale" />
+		</footer>
 	</section>
 </main>
