@@ -19,7 +19,7 @@
 			</button>
 		</div>
 		<section class="rounded-md bg-card min-h-64 p-4">
-			<div class="flex justify-between">
+			<div class="flex-col lg:flex-row justify-between">
 				<img src="https://github.com/neopromic.png" alt="Avatar" class="size-24 rounded-full" />
 				<div class="flex-1 px-6 items-center">
 					<p class="text-2xl font-bold">neopromic</p>
