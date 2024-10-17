@@ -12,7 +12,7 @@
       </Breadcrumb.Item>
       <Breadcrumb.Separator />
       <Breadcrumb.Item>
-        <Breadcrumb.Link href="/">Painel de Controle</Breadcrumb.Link>
+        <Breadcrumb.Link href="/" class="text-zinc-600">Painel de Controle</Breadcrumb.Link>
       </Breadcrumb.Item>
     </Breadcrumb.List>
 	</Breadcrumb.Root>
