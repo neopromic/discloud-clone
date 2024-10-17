@@ -2,7 +2,7 @@
 	import * as Tabs from '$lib/components/ui/tabs';
 </script>
 
-<Tabs.Root value="account" class="w-[400px]">
+<Tabs.Root value="account" class="w-full">
 	<Tabs.List>
 		<Tabs.Trigger value="apps">Apps</Tabs.Trigger>
 		<Tabs.Trigger value="timeline">Timeline</Tabs.Trigger>
