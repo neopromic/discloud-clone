@@ -1,6 +1,28 @@
 <script lang="ts">
 	import * as Tabs from '$lib/components/ui/tabs';
-	import { Activity } from 'lucide-svelte';
+	import { Activity, Power, Settings } from 'lucide-svelte';
+	import AppCard from './AppCard.svelte';
+	const apps = [
+		{
+			name: 'App 1',
+			avatar: 'https://github.com/neopromic.png',
+			description: 'Bot discord',
+			isOn: true
+		},
+		{
+			name: 'App 2',
+			avatar: 'https://github.com/user2.png',
+			description: 'Bot manager',
+			isOn: false
+		},
+		{ name: 'App 3', avatar: 'https://github.com/user3.png', description: 'Shop bot', isOn: true },
+		{
+			name: 'Roger',
+			avatar: 'https://github.com/neopromic.png',
+			description: 'Roger is the best bot of the world!',
+			isOn: true
+		}
+	];
 </script>
 
 <Tabs.Root value="apps" class="w-full h-full">
@@ -30,11 +52,15 @@
 	</Tabs.List>
 	<Tabs.Content value="apps" class="w-full bg-card-darker px-4 py-2 space-y-4">
 		<h1 class="text-2xl font-semibold">Aplicações registradas</h1>
-		<div class="bg-background w-full min-h-12">
-			<p>Roger</p>
-			<button>
-				<Activity />
-			</button>
+		<div class="bg-card w-full min-h-12 p-4 space-y-4 rounded-md">
+			{#each apps as app}
+				<AppCard
+					name={app.name}
+					avatar={app.avatar}
+					description={app.description}
+					isOn={app.isOn}
+				/>
+			{/each}
 		</div>
 	</Tabs.Content>
 	<Tabs.Content value="timeline" class="w-full bg-card-darker px-4 py-2 space-y-4">
