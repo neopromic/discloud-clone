@@ -77,3 +77,11 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+.cap {
+	@apply text-muted-foreground text-sm;
+}
+
+.appTitle {
+	@apply font-medium tracking-tight cursor-pointer hover:text-primary transition-all;
+}
