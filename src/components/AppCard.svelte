@@ -18,7 +18,7 @@
 	<div class="flex gap-2 items-center">
 		<button class="group">
 			{#if isOn}
-				<Activity class="text-primary group-hover:text-green-500/70" />
+				<Activity class="text-primary group-hover:text-green-500/70 animate-pulse" />
 			{:else}
 				<Activity class="text-red-500 group-hover:text-red-500/70" />
 			{/if}
