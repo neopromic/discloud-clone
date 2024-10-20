@@ -92,5 +92,5 @@ a > p {
 }
 
 .footerLinks {
-	@apply text-muted-foreground !important;
+	@apply text-muted-foreground hover:text-primary !important;
 }
