@@ -85,3 +85,8 @@
 .appTitle {
 	@apply font-medium tracking-tight cursor-pointer hover:text-primary transition-all;
 }
+
+a,
+a > p {
+	@apply hover:underline hover:text-primary;
+}
