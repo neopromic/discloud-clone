@@ -68,37 +68,37 @@
 		<div class="flex flex-col space-y-2">
 			<h1 class="text-xl font-semibold">Empresa</h1>
 			<a href="/">
-				<p>Planos</p>
+				<p class="footerLinks">Planos</p>
 			</a>
 			<a href="/">
-				<p>Sobre</p>
+				<p class="footerLinks">Sobre</p>
 			</a>
 			<a href="/">
-				<p>Brand</p>
+				<p class="footerLinks">Brand</p>
 			</a>
 		</div>
 		<div class="flex flex-col space-y-2">
 			<h1 class="text-xl font-semibold">API</h1>
 			<a href="/">
-				<p>Como usar</p>
+				<p class="footerLinks">Como usar</p>
 			</a>
 			<a href="/">
-				<p>Módulo NodeJs</p>
+				<p class="footerLinks">Módulo NodeJs</p>
 			</a>
 			<a href="/">
-				<p>Módulo Python</p>
+				<p class="footerLinks">Módulo Python</p>
 			</a>
 		</div>
 		<div class="flex flex-col space-y-2 col-span-2 lg:col-span-none">
 			<h1 class="text-xl font-semibold">Recursos</h1>
 			<a href="/">
-				<p>Como hospedar</p>
+				<p class="footerLinks">Como hospedar</p>
 			</a>
 			<a href="/">
-				<p>Fale conosco</p>
+				<p class="footerLinks">Fale conosco</p>
 			</a>
 			<a href="/">
-				<p>Blog</p>
+				<p class="footerLinks">Blog</p>
 			</a>
 		</div>
 		<div class="flex flex-col space-y-2">

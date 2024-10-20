@@ -90,3 +90,7 @@ a,
 a > p {
 	@apply hover:underline hover:text-primary;
 }
+
+.footerLinks {
+	@apply text-muted-foreground !important;
+}
