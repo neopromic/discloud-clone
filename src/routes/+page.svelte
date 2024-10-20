@@ -119,15 +119,17 @@
 			>
 		</div>
 	</footer>
-	<div class="border-t mx-6 lg:mx-12 py-12 mt-6 lg:flex gap-4 grid-cols-2">
-		<p class="lg:flex-1 col-span-1">DisCloud © 2019 - 2024 • Todos os direitos reservados.</p>
+	<div class="border-t mx-6 lg:mx-12 py-12 mt-6 lg:flex gap-4 grid-cols-1 grid place-items-center">
+		<p class="lg:flex-1 col-span-1 text-center">
+			DisCloud © 2019 - 2024 • Todos os direitos reservados.
+		</p>
 		<a href="/">
 			<p>Documentação</p>
 		</a>
 		<a href="/">
 			<p>Termos de Serviço</p>
 		</a>
-		<a href="/">
+		<a href="/" class="col-span-1">
 			<p>Políticas de Uso</p>
 		</a>
 	</div>
