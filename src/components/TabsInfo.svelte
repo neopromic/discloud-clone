@@ -2,21 +2,39 @@
 	import * as Tabs from '$lib/components/ui/tabs';
 	import { Activity, Power, Settings } from 'lucide-svelte';
 	import AppCard from './AppCard.svelte';
-	const apps = [
+
+	interface App {
+		id: string;
+		name: string;
+		avatar: string;
+		description: string;
+		isOn: boolean;
+	}
+
+	const apps: App[] = [
 		{
+			id: '1',
 			name: 'App 1',
 			avatar: 'https://github.com/neopromic.png',
 			description: 'Bot discord',
 			isOn: true
 		},
 		{
+			id: '2',
 			name: 'App 2',
 			avatar: 'https://github.com/user2.png',
 			description: 'Bot manager',
 			isOn: false
 		},
-		{ name: 'App 3', avatar: 'https://github.com/user3.png', description: 'Shop bot', isOn: true },
 		{
+			id: '3',
+			name: 'App 3',
+			avatar: 'https://github.com/user3.png',
+			description: 'Shop bot',
+			isOn: true
+		},
+		{
+			id: '4',
 			name: 'Roger',
 			avatar: 'https://github.com/neopromic.png',
 			description: 'Roger is the best bot of the world!',
@@ -55,6 +73,7 @@
 		<div class="bg-card w-full min-h-12 p-4 space-y-4 rounded-md">
 			{#each apps as app}
 				<AppCard
+					id={app.id}
 					name={app.name}
 					avatar={app.avatar}
 					description={app.description}
