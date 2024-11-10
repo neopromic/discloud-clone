@@ -38,6 +38,9 @@
 				Página Inicial
 			</Button>
 		</div>
+		<p class="text-sm text-muted-foreground">
+			Código de erro: {$page.status}
+		</p>
 	</div>
 </div>
 
